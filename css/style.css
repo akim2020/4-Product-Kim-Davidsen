@@ -1,0 +1,19 @@
+.w3-bar1 {
+    width: 100%;
+    overflow: hidden; 
+    background-color: #7D8B96;
+}
+
+.w3-center .w3-bar1 {
+    display: inline-block;
+    width: auto
+}
+
+.w3-bar1 .w3-bar-item {
+    padding: 14px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
