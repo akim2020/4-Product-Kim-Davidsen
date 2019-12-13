@@ -39,3 +39,12 @@
     cursor: pointer;
     white-space: nowrap;
 }
+
+.w3-annoyingcolor {
+    background-color: #92bc8b;
+    text-decoration: none;
+}
+
+.w3-bar-item1 {
+    background-color: #92bc8b;
+}

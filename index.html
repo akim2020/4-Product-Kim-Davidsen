@@ -52,35 +52,21 @@
     <div class="w3-col l8 m6">
       <h1 id="About" class="w3-jumbo"><b>Welcome to Tempescope</b></h1>
       <h1 class="w3-xxlarge"><b>Ambient weather display for your home</b></h1>
-      <p><span class="w3-xlarge">Take photos like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
-        <i class="fa fa-download"></i> Download Application
+      <p>The tempescope is an ambient physical display that visualizes various weather conditions like rain, clouds, and lightning.  Based on weather forecasts from the internet, it can reproduce tomorrow's sky in your living room.</p>
+      <button class="w3-button w3-padding-large w3-section w3-hide-small w3-text-white w3-annoyingcolor" onclick="document.getElementById('download').style.display='block'">
+        <a href="#Pricing" class="w3-annoyingcolor"><h5>Buy Now</h5></a>
+          
       </button>
       <p>Available for <i class="fa fa-android w3-xlarge w3-text-green"></i> <i class="fa fa-apple w3-xlarge"></i> <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
     </div>
     <div class="w3-col l4 m6">
-      <img src="img/aboutpage2.jpg" class="w3-image w3-right w3-hide-small" width="335" height="600">
+      <img src="img/aboutpage2a.jpg" class="w3-image w3-right w3-hide-small" width="335" height="600">
       <div class="w3-center w3-hide-large w3-hide-medium">
         <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
-          <i class="fa fa-download"></i> Download Application
+           Buy Now
         </button>
-        <img src="img/aboutpage2.jpg" class="w3-image w3-margin-top" width="335" height="471">
+        <img src="img/aboutpage2a.jpg" class="w3-image w3-margin-top" width="335" height="471">
       </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div id="download" class="w3-modal w3-animate-opacity">
-  <div class="w3-modal-content" style="padding:32px">
-    <div class="w3-container w3-white">
-      <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
-      <h2 class="w3-wide">DOWNLOAD</h2>
-      <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
-      <i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i> <i class="fa fa-windows w3-large"></i>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Fake Download</button>
     </div>
   </div>
 </div>
@@ -164,43 +150,33 @@
 </div>
 
 <!-- Pricing Section -->
+    
 <div class="w3-padding-64 w3-center w3-white">
   <h1 id="Pricing" class="w3-jumbo"><b>Pricing</b></h1>
-  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-half w3-section">
-      <ul class="w3-ul w3-card w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16"><b>250</b> Photos</li>
-        <li class="w3-padding-16"><b>10</b> Features</li>
-        <li class="w3-padding-16"><b>No</b> Ads</li>
-        <li class="w3-padding-16"><b>Office hours</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-opacity">$ 25</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"><i class="fa fa-download"></i> Download</button>
-        </li>
-      </ul>
+  <p class="w3-large">Choose a model plan that fits your needs.</p>
     </div>
-    <div class="w3-half w3-section">
-      <ul class="w3-ul w3-card w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-32">Premium</li>
-        <li class="w3-padding-16"><b>1000</b> Photos</li>
-        <li class="w3-padding-16"><b>50</b> Features</li>
-        <li class="w3-padding-16"><b>No</b> Ads</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-opacity">$ 99</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"> <i class="fa fa-download"></i> Download</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <br>
+  
+<div class="w3-bar w3-annoyingcolor">
+  <button class="w3-bar-item w3-button" onclick="openTemp('Tempescope')">Tempescope</button>
+  <button class="w3-bar-item w3-button" onclick="openTemp('Plus')">Tempescope Plus</button>
+  <button class="w3-bar-item w3-button" onclick="openTemp('My')">myTempescope</button>
 </div>
+    
+    <div id="Tempescope" class="Temp w3-margin w3-bar-item1">
+  <h2>Tempescope</h2>
+  <p>Our cutting-edge, best-selling model, designed for the modern city dweller to deliver an accurate forecast. </p>
+</div>
+
+<div id="Plus" class="Temp w3-margin w3-bar-item1" style="display:none">
+  <h2>Tempescope Plus</h2>
+  <p>Our smartest, most beautiful model yet, with an ambient light display and speaker all in one. Specially engineered to create an aesthetic apartment environment.</p>
+</div>
+
+<div id="My" class="Temp w3-margin w3-bar-item1" style="display:none">
+  <h2>myTempescope</h2>
+  <p>Our newest model, myTempescope allows you to personalize your product with state-of-the-art engravings by our certified artisans.</p>
+</div>
+
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
@@ -235,6 +211,6 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 </script>
-
+<script src="js/tabs.js"></script>
 </body>
 </html>
