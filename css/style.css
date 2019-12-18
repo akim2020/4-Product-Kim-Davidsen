@@ -48,3 +48,15 @@
 .w3-bar-item1 {
     background-color: #92bc8b;
 }
+
+.tempvideo {
+    margin: 50px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clickhere {
+    text-decoration: underline;
+}
