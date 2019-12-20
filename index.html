@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
         
     <style>
-        body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+        body,h1,h2,h3,h4,h5 {font-family: "Barlow Condensed", sans-serif}
         body {font-size: 16px;}
         img {margin-bottom: -8px;}
         .mySlides {display: none;}
@@ -20,33 +21,42 @@
      
     </head>
 
-<body class="w3-content w3-black" style="max-width:1500px;">
-    
-<div class="w3-bar1">
-  <a href="#Home" class="w3-bar-item w3-button1">Home</a>
-  <a href="#About" class="w3-bar-item w3-button1 w3-hide-small">About</a>
-  <a href="#Details" class="w3-bar-item w3-button1 w3-hide-small">Details</a>
-  <a href="#Features" class="w3-bar-item w3-button1 w3-hide-small">Features</a>
-  <a href="#Pricing" class="w3-bar-item w3-button1 w3-hide-small">Pricing</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button1 w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+<body class="w3-content" style="max-width:1500px;">
+            
+<div class="w3-bar w3-bar1 w3-text-white w3-large">
+  <a href="#Home" class="w3-bar-item w3-button">Home</a>
+  <a href="#About" class="w3-bar-item w3-button w3-hide-small">About</a>
+  <a href="#Details" class="w3-bar-item w3-button w3-hide-small">Details</a>
+  <a href="#Features" class="w3-bar-item w3-button w3-hide-small">Features</a>
+  <a href="#Pricing" class="w3-bar-item w3-button w3-hide-small">Pricing</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
 </div>
 
-<!-- Header with Slideshow -->
-<header class="w3-display-container w3-center">
-  <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
-  <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="img/coverphoto.jpg" alt="Image 1" style="min-width:500px" width="1500" height="1000">
-  </div>
-  <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="img/slideshow7.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
-  </div>
-  <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="img/slideshow5b.jpg" alt="Image 3" style="min-width:500px" width="1500" height="900">
+<div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large w3-text-white dropdown">
+  <a href="#About" class="w3-bar-item w3-button">About</a>
+  <a href="#Details" class="w3-bar-item w3-button">Details</a>
+  <a href="#Features" class="w3-bar-item w3-button">Features</a>
+   <a href="#Pricing" class="w3-bar-item w3-button">Pricing</a>
+</div>
     
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="img/COVERRRR.jpg" style="width:100%">
   </div>
-    <a class="w3-button1 w3-grey w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)"><i class="fa fa-angle-right"></i></a>
-    <a class="w3-button1 w3-grey w3-display-left w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(-1)"><i class="fa fa-angle-left"></i></a>
-</header>
+
+  <div class="mySlides fade">
+    <img src="img/COVER2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/COVER3.jpg" style="width:100%">
+  </div>
+
+    <a class="w3-button1 w3-grey w3-display-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)"><i class="fa fa-angle-right"></i></a>
+    <a class="w3-button1 w3-grey w3-display-left w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(-1)"><i class="fa fa-angle-left"></i></a>
+ </div>
+ <br>
 
 <!-- The About Section -->
 <div class="w3-padding-64 w3-white">
@@ -54,12 +64,12 @@
     <div class="w3-col l8 m6">
       <h1 id="About" class="w3-jumbo"><b>Welcome to Tempescope</b></h1>
       <h1 class="w3-xxlarge"><b>Ambient weather display for your home</b></h1>
-      <p>The tempescope is an ambient physical display that visualizes various weather conditions like rain, clouds, and lightning.  Based on weather forecasts from the internet, it can reproduce tomorrow's sky in your living room.</p>
-      <button class="w3-button w3-padding-large w3-section w3-hide-small w3-text-white w3-annoyingcolor" onclick="document.getElementById('download').style.display='block'">
-        <a href="#Pricing" class="w3-annoyingcolor"><h5>Buy Now</h5></a>
+      <h4>The tempescope is an ambient physical display that visualizes various weather conditions like rain, clouds, and lightning.  Based on weather forecasts from the internet, it can reproduce tomorrow's sky in your living room.</h4>
+      <button class="w3-button w3-padding-medium w3-section w3-hide-small w3-text-white w3-annoyingcolor" onclick="document.getElementById('download').style.display='block'">
+        <a href="#Pricing" class="w3-annoyingcolor"><h4>Buy Now</h4></a>
           
       </button>
-      <p>Available at <i class="fab fa-amazon w3-xxlarge w3-text-orange"></i></p>
+      <h4>Available at <i class="fab fa-amazon w3-xxlarge w3-text-orange"></i></h4>
     </div>
     <div class="w3-col l4 m6">
       <img src="img/aboutpage2a.jpg" class="w3-image w3-right w3-hide-small w3-round" width="335" height="600">
@@ -77,18 +87,35 @@
 <div class="w3-padding-64 w3-light-grey">
   <div class="w3-row-padding">
     <div class="w3-col l4 m6">
-      <img class="w3-image w3-round w3-hide-small w3-grayscale" src="img/slideshow4.jpg" alt="App" width="330" height="600">
+      <img class="w3-image w3-round w3-hide-small w3-grayscale" src="img/detailspic.jpg" alt="App" width="330" height="600">
     </div>
     <div class="w3-col l8 m6">
-      <h1 id="Details" class="w3-jumbo"><b>About</b></h1>
-      <p><span class="w3-xlarge">You can sync the Tempescope </span> to display the weather for today, or tomorrow for where you're currently at, or you can have it visualize the weather in a different location so that you can share the weather with a far-away loved one.Then again, you don't actually have to sync the Tempescope to the current or future weather, as you can simply set it to any type of weather, including rain, cloud, sunshine, ect, depending on your mood. Feeling a little down? Display some rain or lightning, feeling bright? Display some sunshine! Love reading or falling asleep to some soothing raindrops? Set it to rain, and listen to the soft drizzle of rain falling down for a nap or a quick read. <div>
-  <p class="clickhere" onclick="document.getElementById('id01').style.display='block'">Click here for more information.</p>
-
+      <h1 id="Details" class="w3-jumbo"><b>Details</b></h1>
+        <h5>You can sync the Tempescope to display the weather for today, or tomorrow for where you're currently at, or you can have it visualize the weather in a different location so that you can share the weather with a far-away loved one. Then again, you don't actually have to sync the Tempescope to the current or future weather, as you can simply set it to any type of weather, including rain, cloud, sunshine, ect, depending on your mood. Feeling a little down? Display some rain or lightning, feeling bright? Display some sunshine! Love reading or falling asleep to some soothing raindrops? Set it to rain, and listen to the soft drizzle of rain falling down for a nap or a quick read.</h5>
+        <div>
+  <h5 class="clickhere" onclick="document.getElementById('id01').style.display='block'">Click here for more information.</h5>
   <div id="id01" class="w3-modal">
-    <div class="w3-modal-content">
+    <div class="w3-modal-content modal-content">
       <div class="w3-container">
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-        <iframe class="tempvideo" width="560" height="315" src="https://www.youtube.com/embed/aw0kWmMFv4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright close">&times;</span>
+         
+          <style>.embed-container { 
+              position: relative; 
+              padding-bottom: 56.25%; 
+              height: 0; 
+              overflow: hidden; 
+              max-width: 100%; 
+              } 
+              .embed-container iframe, .embed-container object, .embed-container embed { 
+                  position: absolute; 
+                  top: 0; 
+                  left: 0; 
+                  width: 100%; 
+                  height: 100%; 
+              }
+          </style>
+          <div class='embed-container'><iframe src='https://www.youtube.com/embed//aw0kWmMFv4g' frameborder='0' allowfullscreen></iframe>
+          </div>
       </div>
     </div>
   </div>
@@ -161,32 +188,31 @@
 
 <!-- Pricing Section -->
     
-<div class="w3-padding-64 w3-center w3-white">
+<div class="w3-padding-32 w3-center w3-white">
   <h1 id="Pricing" class="w3-jumbo"><b>Pricing</b></h1>
-  <p class="w3-large">Choose a model plan that fits your needs.</p>
+  <p class="w3-xlarge">Choose a model plan that fits your needs.</p>
     </div>
   
-<div class="w3-bar w3-annoyingcolor">
-  <button class="w3-bar-item w3-button" onclick="openTemp('Tempescope')">Tempescope</button>
-  <button class="w3-bar-item w3-button" onclick="openTemp('Plus')">Tempescope Plus</button>
-  <button class="w3-bar-item w3-button" onclick="openTemp('My')">myTempescope</button>
+<div class="w3-bar bar">
+  <button class="w3-bar-item w3-button w3-xlarge" onclick="openTemp('Tempescope')">Tempescope</button>
+  <button class="w3-bar-item w3-button w3-xlarge" onclick="openTemp('Plus')">Tempescope Plus</button>
+  <button class="w3-bar-item w3-button w3-xlarge" onclick="openTemp('My')">myTempescope</button>
 </div>
-    
-    <div id="Tempescope" class="Temp w3-margin w3-bar-item1">
-  <h2>Tempescope</h2>
-  <p>Our cutting-edge, best-selling model, designed for the modern city dweller to deliver an accurate forecast. </p>
-</div>
-
-<div id="Plus" class="Temp w3-margin w3-bar-item1" style="display:none">
-  <h2>Tempescope Plus</h2>
-  <p>Our smartest, most beautiful model yet, with an ambient light display and speaker all in one. Specially engineered to create an aesthetic apartment environment.</p>
+       
+<div id="Tempescope" class="Temp w3-padding w3-bar-item1">
+  <h2>Tempescope - $79.99</h2>
+  <h5>Our cutting-edge, best-selling model, designed for the modern city dweller to deliver an accurate forecast. </h5>
 </div>
 
-<div id="My" class="Temp w3-margin w3-bar-item1" style="display:none">
-  <h2>myTempescope</h2>
-  <p>Our newest model, myTempescope allows you to personalize your product with state-of-the-art engravings by our certified artisans.</p>
+<div id="Plus" class="Temp w3-padding w3-bar-item1" style="display:none">
+  <h2>Tempescope Plus - $99.99</h2>
+  <h5>Our smartest, most beautiful model yet, with an ambient light display and speaker all in one. Specially engineered to create an aesthetic apartment environment.</h5>
 </div>
 
+<div id="My" class="Temp w3-padding w3-bar-item1" style="display:none">
+  <h2>myTempescope - $99.99</h2>
+  <h5>Our newest model, myTempescope allows you to personalize your product with state-of-the-art engravings by our certified artisans.</h5>
+</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
@@ -218,6 +244,16 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+    
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
 </script>
 <script src="js/tabs.js"></script>
 </body>
